@@ -904,7 +904,7 @@ mod tests {
         });
         let bundled = std::fs::read_to_string(concat!(
             env!("CARGO_MANIFEST_DIR"),
-            "/../../app/src/main/assets/kernel_profiles/5.15.189-android13-8-00016-g51bba4309aac-ab14546557.conf"
+            "/app/src/main/assets/kernel_profiles/5.15.189-android13-8-00016-g51bba4309aac-ab14546557.conf"
         ))
         .expect("bundled 5.15.189 profile");
         let generated = flatten_conf(&generated);
